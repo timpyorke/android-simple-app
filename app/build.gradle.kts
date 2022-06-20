@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.library")
+    id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
@@ -7,15 +7,20 @@ android {
     compileSdk = 32
 
     defaultConfig {
+        applicationId = "com.mangofactory.androidsimpleapp"
         minSdk = 21
         targetSdk = 32
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,9 +41,14 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.2.0-rc01"
     }
+    packagingOptions {
+        jniLibs.excludes.add("/META-INF/{AL2.0,LGPL2.1}")
+    }
 }
 
 dependencies {
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    api(project(":features"))
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui:1.2.0-rc01")
@@ -50,4 +60,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.0-rc01")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.2.0-rc01")
+    debugImplementation("androidx.compose.ui:ui-test-manifest:1.2.0-rc01")
 }

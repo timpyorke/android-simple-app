@@ -1,4 +1,4 @@
-package com.mangofactory.androidsimpleapp.ui.theme
+package com.mangofactory.features.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

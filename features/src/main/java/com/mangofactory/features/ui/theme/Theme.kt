@@ -1,4 +1,4 @@
-package com.mangofactory.androidsimpleapp.ui.theme
+package com.mangofactory.features.ui.theme
 
 import android.app.Activity
 import android.os.Build

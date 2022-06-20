@@ -13,8 +13,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Android Simple App"
-include ':app'
-include ':data'
-include ':domain'
-include ':features'
-include ':utils'
+include(
+    ":app",
+    ":data",
+    ":domain",
+    ":features",
+    ":utils"
+)

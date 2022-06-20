@@ -1,4 +1,4 @@
-package com.mangofactory.androidsimpleapp.ui.theme
+package com.mangofactory.features.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
