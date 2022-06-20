@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "558749646150",
+    "project_id": "fir-app-a8672",
+    "storage_bucket": "fir-app-a8672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558749646150:android:5d742f7a3862116e04b947",
+        "android_client_info": {
+          "package_name": "com.mangofactory.androidsimpleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558749646150-2h6au9osmhark4opqdhlnsmeustmrg0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEtGjQUTuGr5YD7K-KPNZtnfuHv5tcv1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558749646150-2h6au9osmhark4opqdhlnsmeustmrg0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "558749646150-gjfnlmv38q2s0tb01nkhp1nbdkmnflfo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mangofactory.iOS-Demo-App"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
